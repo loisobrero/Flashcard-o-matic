@@ -41,9 +41,11 @@ function EditDeck() {
       ...deck, 
       name: name,
       description: description, 
-    }).then((newDeck) => history.push(`decks/${newDeck.id}`))
+    }).then((newDeck) => history.push(`/decks/${newDeck.id}`))
     //console.log(name);
     //console.log(description);
+    updateDeck(1)
+    history.push(`/`);
   }
   return (
     //create deck form saves data inputted by form into data/db.json
