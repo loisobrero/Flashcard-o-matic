@@ -2,7 +2,7 @@
 
 This application is an assignment from Thinkful's Software Engineering Program. This app was created to help teachers and students create flashcards to help with studying in a more effective and efficient way.
 
-## Learning objectives
+## Learning Objectives
 
 -Installing packages via NPM
 
