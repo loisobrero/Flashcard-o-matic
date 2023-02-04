@@ -29,9 +29,9 @@ function AddCard({card}) {
 
   }, [deckId])
 
-  //When form is saved, card will be added to deck and user will be able to add new cards
-  
+
   const submitHandler = async (e) => {
+    e.preventDefault();
       const abortController = new AbortController();
       const newCard = {
         front, 
@@ -79,6 +79,9 @@ const onChangeBackHandler = (e) => {
           onChangeBackHandler={onChangeBackHandler}
           front={front}
           back={back}
+          deckId={deckId}
+          save="Save"
+          cancel="Cancel"
           />
       </div>
       
