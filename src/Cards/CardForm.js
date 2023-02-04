@@ -1,9 +1,6 @@
 import React from "react";
-import { useHistory, useParams } from "react-router-dom";
 
-function CardForm({ onChangeBackHandler, onChangeFrontHandler, submitHandler, front, back }) {
-  const history = useHistory();
-  const { deckId } = useParams;
+function CardForm({ onChangeBackHandler, onChangeFrontHandler, submitHandler, front, back, deckId, save, cancel }) {
   
   return (
     <div>
@@ -33,8 +30,8 @@ function CardForm({ onChangeBackHandler, onChangeFrontHandler, submitHandler, fr
           ></textarea>
         </div>
       </form>
-      <button type="button" className="btn btn-secondary mx-1" onClick={() => history.push(`/decks/${deckId}`)}>Done</button>
-      <button type="submit" className="btn btn-primary">Save</button>
+      <button type="button" className="btn btn-secondary mx-1" onClick={() => history.push(`/decks/${deckId}`)}>{cancel}</button>
+      <button type="submit" className="btn btn-primary">{save}</button>
     </div>
   )
 }
