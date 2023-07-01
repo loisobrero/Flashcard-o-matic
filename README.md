@@ -31,14 +31,6 @@ To get started with Flashcard-o-matic, follow these steps:
 3. Start the development server: `npm start`
 4. Open your browser and visit: `http://localhost:3000`
 
-## Screenshots
-
-![Flashcard-o-matic Homepage](/screenshots/homepage.png)
-*Screenshot of the Flashcard-o-matic homepage.*
-
-![Flashcard-o-matic Deck View](/screenshots/deck-view.png)
-*Screenshot of the deck view, where flashcards are displayed and can be managed.*
-
 ## Contributing
 
 Contributions to Flashcard-o-matic are welcome! If you encounter any issues or have suggestions for improvement, please open an issue on the GitHub repository.
